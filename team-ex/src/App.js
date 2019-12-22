@@ -1,6 +1,13 @@
 import React, { Component } from 'react';
+import {
+    BrowserRouter as Router,
+    Switch,
+    Route,
+    Link
+  } from "react-router-dom";
 
 import './App.css';
+import Phase1 from './components/maya/phase1';
 
 export default class App extends Component {
 
@@ -18,10 +25,12 @@ export default class App extends Component {
         }
     }
 
+
+
     render () {
         return ( 
         <div className = "App">
-            
+            <Phase1/>
         </div>
         )
     }
