@@ -1,9 +1,13 @@
 import React, { Component } from 'react';
+import {
+    BrowserRouter as Router,
+    Switch,
+    Route,
+  } from "react-router-dom";
 
-import './App.css';
+import Phase3 from './components/phase3/phase3';
 
 export default class App extends Component {
-
     constructor(props){
         super(props);
         this.state = {
@@ -20,10 +24,18 @@ export default class App extends Component {
 
     render () {
         return ( 
-        <div className = "App">
-            
-        </div>
-        )
+            <Router>
+                {/* <Phase3/> */}
+                <Switch>
+                    <Route path="/next4">
+                        <div style={{height: "200px", width: "200px", backgroundColor: "red"}}></div>
+                    </Route>
+                    <Route path="/">
+                        <Phase3/>
+                    </Route>
+                </Switch>
+            </Router>
+        );
     }
 
 }
