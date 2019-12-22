@@ -10,7 +10,6 @@ import {
     Link,
     Prompt
   } from "react-router-dom";
-import AuthExample from './components/ex';
 
 export default class App extends Component {
 
