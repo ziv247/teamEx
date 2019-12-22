@@ -29,16 +29,13 @@ class Phase2 extends React.Component{
         
         if(city && street && houseNumber){
             this.setState({allStates:!this.state.allStates})
-            console.log('great success',city,street,houseNumber)
         }
         
 
     }
     
     render(){
-        
-        // console.log(this.state)
-        return(
+                return(
             <div>
                 <form action="">
                     <p>City Name :  <input onChange={((e)=>this.onChange(e.target.name,e.target.value))} name={'city'} placeholder='Please Insert City Name' type="text"/></p>
