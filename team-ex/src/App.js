@@ -1,4 +1,5 @@
-import React, { Component,useState } from 'react';
+
+import React, { Component } from 'react';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import './App.css';
 import Wizard from './components/wizard';
@@ -6,14 +7,12 @@ import {
     BrowserRouter as Router,
     Switch,
     Route,
-    Redirect,
-    Link,
-    Prompt
   } from "react-router-dom";
-import AuthExample from './components/ex';
+
+import Phase3 from './components/phase3/phase3';
+
 
 export default class App extends Component {
-
     constructor(props){
         super(props);
         this.state = {
@@ -25,6 +24,7 @@ export default class App extends Component {
 
     render () {
         return ( 
+
         <div className = "App">
             <Router>
       
@@ -40,6 +40,7 @@ export default class App extends Component {
             
         </div>
         )
+
     }
 
 }
