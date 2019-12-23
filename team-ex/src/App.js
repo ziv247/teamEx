@@ -1,17 +1,6 @@
-<<<<<<< HEAD
-import React, { Component } from 'react';
-import Phase2 from './components/newComponents/phase2.jsx';
-import {
-    BrowserRouter as Router,
-    Switch,
-    Route,
-    Link,
-  }from 'react-router-dom';
-=======
 
 import React, { Component } from 'react';
 import 'bootstrap/dist/css/bootstrap.min.css';
->>>>>>> master
 import './App.css';
 import Wizard from './components/wizard';
 import {
@@ -38,14 +27,6 @@ export default class App extends Component {
 
         <div className = "App">
             <Router>
-<<<<<<< HEAD
-                <Switch>
-                    <Route path='/'>
-                        <Phase2/>
-                    </Route>
-                </Switch>
-            </Router>
-=======
       
 
       <Switch>
@@ -57,7 +38,6 @@ export default class App extends Component {
       </Switch>
     </Router>
             
->>>>>>> master
         </div>
         )
 
