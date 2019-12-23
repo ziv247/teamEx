@@ -41,12 +41,12 @@ class Phase3 extends React.Component {
         <label htmlFor="hobbies">please enter hobbies (optional):</label>
         <input id="hobbies" name="hobbies" type="text" onChange={(e) => this.onChange(e.target.name, e.target.value)}/>
         
-        <Link to="/next2">Previous</Link>
+        <Link to="/phase2">Previous</Link>
         {this.state.isDisabled 
         ?
         <span>Next</span> 
         :
-        <Link to="/next4">Next</Link>
+        <Link to="/summary">Next</Link>
         }
       </form>
     )

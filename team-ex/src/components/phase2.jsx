@@ -42,7 +42,7 @@ class Phase2 extends React.Component{
                     <p>Street Name : <input onChange={((e)=>this.onChange(e.target.name,e.target.value))} name={'street'} placeholder='Please Insert Street Name' type="text"/></p>
                     <p>House Number : <input min='1' pattern='([0-9])\w+' onChange={((e)=>this.onChange(e.target.name,e.target.value))} name={'housenumber'} placeholder='Please Insert House Number' type="text"/></p>
                 </form>
-                <Link onClick={this.checkIfAllTrue} path="/phase2">Next</Link>
+                <Link onClick={this.checkIfAllTrue} to="/phase3">Next</Link>
             </div>
         );
     }
