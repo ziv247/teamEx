@@ -13,7 +13,7 @@ export default class Wizard extends Component{
     
     render(){
         return(
-            <Jumbotron className="m-3">
+            <div>
                 <h1>Hello, WeCode!</h1>
                 <p>
                      Welcome to the BEST wizard in the world!
@@ -23,7 +23,7 @@ export default class Wizard extends Component{
                     <Button variant="primary">Start</Button>
                 </Link>
                 </p>
-                </Jumbotron>
+                </div>
         )
     }
 }
